@@ -12,7 +12,7 @@ fpioa.set_function(12, FPIOA.UART2_RXD)  # GPIO12 -> RX2
 uart2 = UART(UART.UART2, baudrate=115200, bits=UART.EIGHTBITS, parity=UART.PARITY_NONE, stop=UART.STOPBITS_ONE)
 
 # 2. 模型与屏幕配置
-kmodel_path = "/models/steelball2.kmodel"
+kmodel_path = "/sdcard/models/steelball2.kmodel"
 labels = {0: '0'}
 model_input_size = [320, 320]
 rgb888p_size = [640, 360]
